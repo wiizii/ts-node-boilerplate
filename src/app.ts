@@ -1,9 +1,9 @@
 import * as express from 'express';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-function runServer() {
-	const app = express();
-	app.listen(3000, () => {
-		console.log('start server');
-	});
-}
-runServer();
+const app = express();
+
+app.listen(3000, () => {
+  console.log('start server');
+});
